@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="{% static  "css/index.css" %}">
+    </head>
+    <body>
+        <h1>{{ welcome_msg }}</h1>
+        <p>Course name : {{ course_name }}<br>
+           Student name : {{ name }}
+        </p>
+        <p>
+           Students attented lecture today : {{ students_today }}
+        </p>
+        <img src = "{% static "images/python.png" %}" alt="Python Image">
+        
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage Access Records</title>
+</head>
+<body>
+
+<h1>Here are the access records</h1>
+
+{% if access_records %}
+    <table>
+        <tr>
+            <th>Webpage</th>
+            <th>Date Accessed</th>
+        </tr>
+
+        {% for record in access_records %}
+        <tr>
+            <td>{{ record.name.name }}</td>
+            <td>{{ record.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No records found.</p>
+{% endif %}
+
+</body>
+</html>

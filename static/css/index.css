@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(229, 217, 196);
+}
+
+h1{
+    color:brown;
+    font-size: large;
+}
+
+img{
+    padding: 5px;
+    border-style:double;
+    border-color: black;
+}
