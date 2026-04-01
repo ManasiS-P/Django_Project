@@ -29,7 +29,7 @@ SECRET_KEY = 'w_^p8+37br*g!em&j4rjhs1_xd7qwd#hh$ubjb-lv-=vf*2osh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['djangopro-agf8gda4bxc0h0b9.swedencentral-01.azurewebsites.net', 'localhost']
+ALLOWED_HOSTS = ['MyDjangoApp.azurewebsites.net', 'localhost']
 
 
 # Application definition
@@ -142,4 +142,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),  # your existing static folder
 ]
 
+STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # REQUIRED for deployment 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # REQUIRED for deployment
