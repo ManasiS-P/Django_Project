@@ -7,28 +7,19 @@ __pycache__/
 venv/
 env/
 ENV/
-antenv/
-
-
-# Environment variables
-.env
 
 # Django stuff
 *.sqlite3
 db.sqlite3
 /staticfiles
 
-# Logs
-*.log
+# Environment files
+.env
+
+# IDE
+.vscode/
+.idea/
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# VS Code / IDE
-.vscode/
-.idea/
-
-# Migrations (optional - usually keep them)
-# */migrations/*
-# !*/migrations/__init__.py
