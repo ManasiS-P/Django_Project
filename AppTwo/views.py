@@ -18,7 +18,7 @@ def index(request):
         'access_records': webpages_list
     }
 
-    return render(request, 'index.html', context = webpages_list)
+    return render(request, 'index.html', context = context)
 
 
 
