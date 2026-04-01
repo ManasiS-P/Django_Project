@@ -29,7 +29,7 @@ SECRET_KEY = 'w_^p8+37br*g!em&j4rjhs1_xd7qwd#hh$ubjb-lv-=vf*2osh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['MyDjangoApp.azurewebsites.net', 'localhost']
+ALLOWED_HOSTS = ['mydjangoapp-a5a5h2dvawhsghau.swedencentral-01.azurewebsites.net', 'localhost']
 
 
 # Application definition
