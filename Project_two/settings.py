@@ -25,6 +25,10 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 if IS_AZURE:
     ALLOWED_HOSTS.append(os.environ.get('WEBSITE_HOSTNAME', ''))
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://mywebappnew-hmcuejd9frfudke5.swedencentral-01.azurewebsites.net/',
+]
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
